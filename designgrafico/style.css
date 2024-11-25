@@ -1,0 +1,233 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Unbounded', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* padrão */
+body {
+    background-color: #FBFADD;
+    color: #0280A7;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+/* header */
+header {
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    padding: 1%;
+    font-weight: 600;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.151);
+}
+
+.botao-contato{
+    display: inline-block;
+    background-color: #0280A7; 
+    color: #FBFADD;
+    text-decoration: none;
+    padding: 0.5% 1%;
+    border-radius: 30px; 
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out;
+}
+
+.botao-contato:hover{
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.botao-sobremim{
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    color: #0280A7;
+}
+
+.botao-sobremim:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.301);
+}
+
+.logo {
+    width: 130px;
+}
+
+.logo-estrelas{
+    width: 130px;
+}
+
+/* navbar */
+.nav-bar{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.nav-bar a{
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.botao-design, .botao-webdesign{
+    transition: all 0.3s ease-in-out;
+    color: #0280A7;
+}
+
+.botao-audiovisual{
+    color: #00AFB8;
+    transition: all 0.3s ease-in-out;
+}
+
+.botao-3d{
+    color: #F69479;
+    transition: all 0.3s ease-in-out;
+}
+
+.botao-ilustra{
+    color: #ED7168;
+    transition: all 0.3s ease-in-out;
+}
+
+.botao-design:hover, .botao-audiovisual:hover, .botao-3d:hover, .botao-ilustra:hover, .botao-webdesign:hover{
+    transform: scale(1.05);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.329);
+}
+
+/* titulo página */
+#titulo-pagina{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #ED7168;
+    padding: 5%;
+}
+
+#titulo-pagina p{
+    font-size: 20px;
+}
+
+/* portfólio 1 */
+#trabalhos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 3% 20% 10% 20%;
+    gap: 6%;
+}
+
+#trabalho-1 a, #trabalho-2 a, #trabalho-3 a, #trabalho-4 a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#trabalhos a {
+    text-decoration: none;
+    color: #ED7168 ;
+}
+
+.john-deere{
+    width: 600px;
+    border-radius: 2%;
+}
+
+
+
+
+/* footer */
+footer{
+    background-color: #0280A7;
+    color: #FBFADD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 2.5%;
+    text-align: center;
+    width: 100%;
+    padding: 2%;
+}
+
+.logo-branco{
+    margin-bottom: 1%;
+    width: 140px;
+}
+
+/* responsividade */
+@media (max-width: 768px) {
+    .logo {
+        max-width: 60px; /* Reduz a logo no cabeçalho */
+    }
+    
+    .botao-contato, .botao-sobremim{
+        font-size: 14px;
+    }
+
+    .logo-estrelas {
+        max-width: 15%;
+    }
+
+    .banner-section {
+        padding: 20px;
+    }
+
+    .banner-central {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+    }
+
+    .nav-bar a {
+        padding: 10px;
+        font-size: 20px; /* Ajusta o tamanho dos botões */
+    }
+
+
+    /* titulo pag */
+    #titulo-pagina{
+        flex-direction: column;
+        margin: 3% 5% 6% 5%;
+    }
+
+    h1{
+        font-size: 35px;
+        padding: 2%;
+    }
+
+    #titulo-pagina p{
+        font-size: 17px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+}

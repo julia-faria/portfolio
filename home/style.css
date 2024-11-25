@@ -1,0 +1,299 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Unbounded', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* padrão */
+body {
+    background-color: #FBFADD;
+    color: #0280A7;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+/* header */
+header {
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    padding: 1%;
+    font-weight: 600;
+}
+
+.botao-contato{
+    display: inline-block;
+    background-color: #0280A7; 
+    color: #FBFADD;
+    text-decoration: none;
+    padding: 0.5% 1%;
+    border-radius: 30px; 
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out;
+}
+
+.botao-contato:hover{
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.botao-sobremim{
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    color: #0280A7;
+}
+
+.botao-sobremim:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.301);
+}
+
+.logo {
+    width: 130px;
+}
+
+.logo-estrelas{
+    width: 130px;
+}
+
+/* banner */
+.banner-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-central{
+    width: 900px;
+}
+
+/* navbar */
+.nav-bar{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.nav-bar a{
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.botao-design, .botao-webdesign{
+    transition: all 0.3s ease-in-out;
+    color: #0280A7;
+}
+
+.botao-audiovisual{
+    color: #00AFB8;
+    transition: all 0.3s ease-in-out;
+}
+
+.botao-3d{
+    color: #F69479;
+    transition: all 0.3s ease-in-out;
+}
+
+.botao-ilustra{
+    color: #ED7168;
+    transition: all 0.3s ease-in-out;
+}
+
+.botao-design:hover, .botao-audiovisual:hover, .botao-3d:hover, .botao-ilustra:hover, .botao-webdesign:hover{
+    transform: scale(1.05);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.329);
+}
+
+/* divisão */
+.separador-section{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.separador-img{
+    width: 160px;
+}
+
+/* container site */
+.aboutme-section, .aboutme-section2{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+.parte-1, .parte-2{
+    padding-left: 16%;
+    padding-right: 16%;
+    text-align: justify;
+}
+
+h2{
+    font-size: 35px;
+    color: #ED7168;
+    margin-bottom: 3%;
+    font-weight: 700;
+}
+
+h3{
+    font-weight: 600;
+    font-size: 21px;
+}
+
+span {
+    font-size: 45px;
+    color: #0280A7;
+    font-weight: 900;
+}
+
+/* container site final */
+.aboutme-section3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2.5%;
+}
+
+.habilidades-img{
+    width: 700px;
+}
+
+/* footer */
+footer{
+    background-color: #0280A7;
+    color: #FBFADD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 2.5%;
+    text-align: center;
+    width: 100%;
+    padding: 2%;
+}
+
+.logo-branco{
+    margin-bottom: 1%;
+    width: 140px;
+}
+
+/* responsividade */ 
+@media (max-width: 768px) {
+    /* navegação inicial */
+    body {
+        font-size: 12px; /* Reduz a fonte para telas menores */
+    }
+
+    .logo {
+        max-width: 60px; /* Reduz a logo no cabeçalho */
+    }
+    
+    .botao-contato, .botao-sobremim{
+        font-size: 14px;
+    }
+
+    .logo-estrelas {
+        max-width: 15%;
+    }
+
+    /* banner section */
+    .banner-section {
+        padding: 20px;
+    }
+
+    .banner-central {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* navbar */
+    .nav-bar {
+        flex-direction: column;
+    }
+
+    .nav-bar a {
+        padding: 10px;
+        font-size: 20px; /* Ajusta o tamanho dos botões */
+    }
+    
+    /* main */
+    .separador-img{
+        width: 20%;
+        margin: 5%;
+    }
+
+    .aboutme-section, .aboutme-section2 {
+        grid-template-columns: 1fr; /* Coloca as colunas empilhadas */
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .aboutme-section, .aboutme-section2 p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .parte-1, .parte-2 {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 6%;
+        padding-bottom: 6%;
+    }
+
+    h2 {
+        font-size: 20px; /* Ajusta o tamanho dos títulos */
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    span {
+        font-size: 25px; /* Ajusta o tamanho do destaque */
+    }
+
+    .aboutme-section3 {
+        margin: 6%;
+    }
+
+    .habilidades-img {
+        max-width: 100%;
+        height: auto;
+        margin: 4%;
+    }
+
+    /* footer */
+    footer {
+        font-size: 10px; /* Reduz o tamanho da fonte do rodapé */
+        padding: 20px;
+        height: auto;
+    }
+
+    .logo-branco {
+        max-width: 20%; /* Reduz a logo no rodapé */
+        margin: 2%;
+        margin-bottom: 4%;
+    }
+}
